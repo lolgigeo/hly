@@ -1,7 +1,7 @@
 # Site settings
 title: "小说章节"
 description: "100章完整内容在线阅读"
-baseurl: ""
+baseurl: "/hly"
 url: "https://lolgigeo.github.io"
 
 # Build settings
