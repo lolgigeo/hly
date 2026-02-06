@@ -1,0 +1,663 @@
+{
+  "total_chapters": 94,
+  "chapters": [
+    {
+      "number": 1,
+      "original": "第01回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 4,
+      "end_line": 7
+    },
+    {
+      "number": 2,
+      "original": "第02回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 8,
+      "end_line": 11
+    },
+    {
+      "number": 3,
+      "original": "第03回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 12,
+      "end_line": 16
+    },
+    {
+      "number": 4,
+      "original": "第04回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 17,
+      "end_line": 22
+    },
+    {
+      "number": 5,
+      "original": "第05回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 23,
+      "end_line": 32
+    },
+    {
+      "number": 6,
+      "original": "第06回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 33,
+      "end_line": 42
+    },
+    {
+      "number": 7,
+      "original": "第07回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 43,
+      "end_line": 52
+    },
+    {
+      "number": 8,
+      "original": "第08回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 53,
+      "end_line": 62
+    },
+    {
+      "number": 9,
+      "original": "第09回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 63,
+      "end_line": 74
+    },
+    {
+      "number": 10,
+      "original": "第10回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 75,
+      "end_line": 84
+    },
+    {
+      "number": 11,
+      "original": "第11回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 85,
+      "end_line": 94
+    },
+    {
+      "number": 12,
+      "original": "第12回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 95,
+      "end_line": 96
+    },
+    {
+      "number": 13,
+      "original": "第13回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 97,
+      "end_line": 106
+    },
+    {
+      "number": 14,
+      "original": "第14回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 107,
+      "end_line": 126
+    },
+    {
+      "number": 15,
+      "original": "第15回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 127,
+      "end_line": 136
+    },
+    {
+      "number": 16,
+      "original": "第十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 137,
+      "end_line": 146
+    },
+    {
+      "number": 18,
+      "original": "第18章",
+      "pattern_type": "阿拉伯数字+章",
+      "start_line": 147,
+      "end_line": 156
+    },
+    {
+      "number": 19,
+      "original": "第十九章",
+      "pattern_type": "中文数字+章",
+      "start_line": 157,
+      "end_line": 166
+    },
+    {
+      "number": 20,
+      "original": "第二十章",
+      "pattern_type": "中文数字+章",
+      "start_line": 167,
+      "end_line": 176
+    },
+    {
+      "number": 21,
+      "original": "第二十一回",
+      "pattern_type": "中文数字+回",
+      "start_line": 177,
+      "end_line": 188
+    },
+    {
+      "number": 24,
+      "original": "第二十四回",
+      "pattern_type": "中文数字+回",
+      "start_line": 189,
+      "end_line": 218
+    },
+    {
+      "number": 25,
+      "original": "第二十五回",
+      "pattern_type": "中文数字+回",
+      "start_line": 219,
+      "end_line": 228
+    },
+    {
+      "number": 26,
+      "original": "第二十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 229,
+      "end_line": 238
+    },
+    {
+      "number": 27,
+      "original": "第二十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 239,
+      "end_line": 248
+    },
+    {
+      "number": 28,
+      "original": "第二十八回",
+      "pattern_type": "中文数字+回",
+      "start_line": 249,
+      "end_line": 258
+    },
+    {
+      "number": 29,
+      "original": "第二十九回",
+      "pattern_type": "中文数字+回",
+      "start_line": 259,
+      "end_line": 268
+    },
+    {
+      "number": 30,
+      "original": "第三十回",
+      "pattern_type": "中文数字+回",
+      "start_line": 269,
+      "end_line": 270
+    },
+    {
+      "number": 31,
+      "original": "第三十一章",
+      "pattern_type": "中文数字+章",
+      "start_line": 271,
+      "end_line": 280
+    },
+    {
+      "number": 3,
+      "original": "第三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 281,
+      "end_line": 290
+    },
+    {
+      "number": 33,
+      "original": "第三十三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 291,
+      "end_line": 300
+    },
+    {
+      "number": 34,
+      "original": "第三十四章",
+      "pattern_type": "中文数字+章",
+      "start_line": 301,
+      "end_line": 310
+    },
+    {
+      "number": 35,
+      "original": "第三十五章",
+      "pattern_type": "中文数字+章",
+      "start_line": 311,
+      "end_line": 320
+    },
+    {
+      "number": 36,
+      "original": "第三十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 321,
+      "end_line": 330
+    },
+    {
+      "number": 37,
+      "original": "第三十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 331,
+      "end_line": 332
+    },
+    {
+      "number": 38,
+      "original": "第三十八章",
+      "pattern_type": "中文数字+章",
+      "start_line": 333,
+      "end_line": 352
+    },
+    {
+      "number": 39,
+      "original": "第三十九章",
+      "pattern_type": "中文数字+章",
+      "start_line": 353,
+      "end_line": 362
+    },
+    {
+      "number": 40,
+      "original": "第四十回",
+      "pattern_type": "中文数字+回",
+      "start_line": 363,
+      "end_line": 372
+    },
+    {
+      "number": 41,
+      "original": "第四十一回",
+      "pattern_type": "中文数字+回",
+      "start_line": 373,
+      "end_line": 382
+    },
+    {
+      "number": 42,
+      "original": "第四十二回",
+      "pattern_type": "中文数字+回",
+      "start_line": 383,
+      "end_line": 392
+    },
+    {
+      "number": 43,
+      "original": "第43回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 393,
+      "end_line": 402
+    },
+    {
+      "number": 44,
+      "original": "第44回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 403,
+      "end_line": 404
+    },
+    {
+      "number": 45,
+      "original": "第45回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 405,
+      "end_line": 444
+    },
+    {
+      "number": 46,
+      "original": "第46回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 445,
+      "end_line": 454
+    },
+    {
+      "number": 47,
+      "original": "第47回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 455,
+      "end_line": 464
+    },
+    {
+      "number": 48,
+      "original": "第48回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 465,
+      "end_line": 474
+    },
+    {
+      "number": 49,
+      "original": "第49回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 475,
+      "end_line": 484
+    },
+    {
+      "number": 50,
+      "original": "第50回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 485,
+      "end_line": 494
+    },
+    {
+      "number": 51,
+      "original": "第51回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 495,
+      "end_line": 496
+    },
+    {
+      "number": 52,
+      "original": "第52回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 497,
+      "end_line": 506
+    },
+    {
+      "number": 53,
+      "original": "第53回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 507,
+      "end_line": 516
+    },
+    {
+      "number": 54,
+      "original": "第54回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 517,
+      "end_line": 526
+    },
+    {
+      "number": 55,
+      "original": "第55回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 527,
+      "end_line": 536
+    },
+    {
+      "number": 56,
+      "original": "第56回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 537,
+      "end_line": 546
+    },
+    {
+      "number": 57,
+      "original": "第57回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 547,
+      "end_line": 556
+    },
+    {
+      "number": 58,
+      "original": "第58回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 557,
+      "end_line": 566
+    },
+    {
+      "number": 59,
+      "original": "第59回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 567,
+      "end_line": 576
+    },
+    {
+      "number": 60,
+      "original": "第60回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 577,
+      "end_line": 586
+    },
+    {
+      "number": 61,
+      "original": "第61回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 587,
+      "end_line": 588
+    },
+    {
+      "number": 62,
+      "original": "第62回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 589,
+      "end_line": 598
+    },
+    {
+      "number": 63,
+      "original": "第六十三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 599,
+      "end_line": 608
+    },
+    {
+      "number": 64,
+      "original": "第64回",
+      "pattern_type": "阿拉伯数字+回",
+      "start_line": 609,
+      "end_line": 618
+    },
+    {
+      "number": 65,
+      "original": "第六十五回",
+      "pattern_type": "中文数字+回",
+      "start_line": 619,
+      "end_line": 628
+    },
+    {
+      "number": 66,
+      "original": "第六十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 629,
+      "end_line": 638
+    },
+    {
+      "number": 67,
+      "original": "第六十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 639,
+      "end_line": 648
+    },
+    {
+      "number": 68,
+      "original": "第六十八回",
+      "pattern_type": "中文数字+回",
+      "start_line": 649,
+      "end_line": 658
+    },
+    {
+      "number": 69,
+      "original": "第六十九回",
+      "pattern_type": "中文数字+回",
+      "start_line": 659,
+      "end_line": 668
+    },
+    {
+      "number": 70,
+      "original": "第七十回",
+      "pattern_type": "中文数字+回",
+      "start_line": 669,
+      "end_line": 670
+    },
+    {
+      "number": 71,
+      "original": "第七十一回",
+      "pattern_type": "中文数字+回",
+      "start_line": 671,
+      "end_line": 680
+    },
+    {
+      "number": 72,
+      "original": "第七十二回",
+      "pattern_type": "中文数字+回",
+      "start_line": 681,
+      "end_line": 690
+    },
+    {
+      "number": 73,
+      "original": "第七十三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 691,
+      "end_line": 700
+    },
+    {
+      "number": 74,
+      "original": "第七十四回",
+      "pattern_type": "中文数字+回",
+      "start_line": 701,
+      "end_line": 710
+    },
+    {
+      "number": 75,
+      "original": "第七十五回",
+      "pattern_type": "中文数字+回",
+      "start_line": 711,
+      "end_line": 720
+    },
+    {
+      "number": 76,
+      "original": "第七十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 721,
+      "end_line": 730
+    },
+    {
+      "number": 77,
+      "original": "第七十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 731,
+      "end_line": 740
+    },
+    {
+      "number": 78,
+      "original": "第七十八回",
+      "pattern_type": "中文数字+回",
+      "start_line": 741,
+      "end_line": 750
+    },
+    {
+      "number": 79,
+      "original": "第七十九回",
+      "pattern_type": "中文数字+回",
+      "start_line": 751,
+      "end_line": 760
+    },
+    {
+      "number": 80,
+      "original": "第八十回",
+      "pattern_type": "中文数字+回",
+      "start_line": 761,
+      "end_line": 762
+    },
+    {
+      "number": 81,
+      "original": "第八十一回",
+      "pattern_type": "中文数字+回",
+      "start_line": 763,
+      "end_line": 772
+    },
+    {
+      "number": 82,
+      "original": "第八十二回",
+      "pattern_type": "中文数字+回",
+      "start_line": 773,
+      "end_line": 782
+    },
+    {
+      "number": 83,
+      "original": "第八十三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 783,
+      "end_line": 792
+    },
+    {
+      "number": 84,
+      "original": "第八十四回",
+      "pattern_type": "中文数字+回",
+      "start_line": 793,
+      "end_line": 802
+    },
+    {
+      "number": 85,
+      "original": "第八十五回",
+      "pattern_type": "中文数字+回",
+      "start_line": 803,
+      "end_line": 812
+    },
+    {
+      "number": 86,
+      "original": "第八十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 813,
+      "end_line": 822
+    },
+    {
+      "number": 87,
+      "original": "第八十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 823,
+      "end_line": 832
+    },
+    {
+      "number": 89,
+      "original": "第八十九回",
+      "pattern_type": "中文数字+回",
+      "start_line": 833,
+      "end_line": 842
+    },
+    {
+      "number": 92,
+      "original": "第九十二回",
+      "pattern_type": "中文数字+回",
+      "start_line": 843,
+      "end_line": 852
+    },
+    {
+      "number": 93,
+      "original": "第九十三回",
+      "pattern_type": "中文数字+回",
+      "start_line": 853,
+      "end_line": 854
+    },
+    {
+      "number": 94,
+      "original": "第九十四回",
+      "pattern_type": "中文数字+回",
+      "start_line": 855,
+      "end_line": 864
+    },
+    {
+      "number": 95,
+      "original": "第九十五回",
+      "pattern_type": "中文数字+回",
+      "start_line": 865,
+      "end_line": 874
+    },
+    {
+      "number": 96,
+      "original": "第九十六回",
+      "pattern_type": "中文数字+回",
+      "start_line": 875,
+      "end_line": 884
+    },
+    {
+      "number": 97,
+      "original": "第九十七回",
+      "pattern_type": "中文数字+回",
+      "start_line": 885,
+      "end_line": 894
+    },
+    {
+      "number": 98,
+      "original": "第九十八回",
+      "pattern_type": "中文数字+回",
+      "start_line": 895,
+      "end_line": 904
+    },
+    {
+      "number": 99,
+      "original": "第九十九回",
+      "pattern_type": "中文数字+回",
+      "start_line": 905,
+      "end_line": 914
+    },
+    {
+      "number": 100,
+      "original": "第一百回",
+      "pattern_type": "中文数字+回",
+      "start_line": 915,
+      "end_line": null
+    }
+  ]
+}

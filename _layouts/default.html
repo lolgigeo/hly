@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if page.chapter %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% endif %}
+</head>
+<body>
+  {% include header.html %}
+  
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {% if page.chapter %}
+        <!-- 章节页面 -->
+        <article class="chapter-content">
+          <header class="chapter-header">
+            <h1 class="chapter-title">{{ page.title }}</h1>
+            <div class="chapter-meta">
+              <span class="chapter-number">第{{ page.chapter }}章</span>
+              {% if page.prev_chapter %}
+                <a href="{{ '/chapters/' | append: page.prev_chapter | append: '/' | relative_url }}" class="nav-link prev-link">← 上一章</a>
+              {% endif %}
+              {% if page.next_chapter %}
+                <a href="{{ '/chapters/' | append: page.next_chapter | append: '/' | relative_url }}" class="nav-link next-link">下一章 →</a>
+              {% endif %}
+            </div>
+          </header>
+          
+          <div class="chapter-body">
+            {{ content }}
+          </div>
+          
+          <nav class="chapter-navigation">
+            <div class="nav-buttons">
+              {% if page.prev_chapter %}
+                <a href="{{ '/chapters/' | append: page.prev_chapter | append: '/' | relative_url }}" class="btn btn-prev">← 上一章</a>
+              {% else %}
+                <span class="btn btn-disabled">← 上一章</span>
+              {% endif %}
+              
+              <a href="{{ '/' | relative_url }}" class="btn btn-index">目录</a>
+              
+              {% if page.next_chapter %}
+                <a href="{{ '/chapters/' | append: page.next_chapter | append: '/' | relative_url }}" class="btn btn-next">下一章 →</a>
+              {% else %}
+                <span class="btn btn-disabled">下一章 →</span>
+              {% endif %}
+            </div>
+            <div class="chapter-progress">
+              <span>进度: {{ page.chapter }}/100</span>
+            </div>
+          </nav>
+        </article>
+      {% else %}
+        <!-- 其他页面（如首页） -->
+        {{ content }}
+      {% endif %}
+    </div>
+  </main>
+  
+  {% include footer.html %}
+  
+  <script src="{{ '/assets/js/navigation.js' | relative_url }}"></script>
+  {% if page.chapter %}{% else %}
+  <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+  {% endif %}
+</body>
+</html>

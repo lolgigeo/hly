@@ -1,0 +1,42 @@
+# Site settings
+title: "小说章节"
+description: "100章完整内容在线阅读"
+baseurl: ""
+url: "https://lolgigeo.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+  - .DS_Store
+
+# Theme (optional, can use custom theme)
+theme: minima
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "default"

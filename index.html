@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="page-heading">
+    <h1 class="page-title">章节目录</h1>
+    <p class="page-description">共100章，点击章节标题开始阅读</p>
+  </div>
+
+  <div class="search-container" id="search">
+    <input type="text" id="search-input" placeholder="搜索章节..." class="search-input">
+    <div id="search-results" class="search-results"></div>
+  </div>
+
+  <div class="chapters-grid" id="chapters-list">
+    {% assign sorted_chapters = site.chapters | sort: 'chapter' %}
+    {% for chapter in sorted_chapters %}
+      {% assign chapter_num = chapter.chapter | default: chapter.name | replace: '.md', '' | plus: 0 %}
+      <div class="chapter-card" data-chapter="{{ chapter_num }}" data-title="{{ chapter.title }}">
+        <a href="{{ chapter.url | relative_url }}" class="chapter-link">
+          <div class="chapter-number">第{{ chapter_num }}章</div>
+          <div class="chapter-title">{{ chapter.title }}</div>
+          {% if chapter.chapter == null or chapter.content contains '缺失' %}
+            <div class="chapter-status missing">缺失章节</div>
+          {% else %}
+            <div class="chapter-status">可读</div>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="stats">
+    <p>总章节数: 100 | 实际章节: 93 | 缺失章节: 7</p>
+    <p class="missing-chapters">缺失章节: 第17、22、23、32、88、90、91章</p>
+  </div>
+</div>
