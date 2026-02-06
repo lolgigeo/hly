@@ -36,7 +36,7 @@ theme: minima
 # Defaults
 defaults:
   - scope:
-      path: ""
+      path: "chapters"
       type: "chapters"
     values:
       layout: "default"
