@@ -6,6 +6,8 @@
 
 🌐 **GitHub Pages**: https://lolgigeo.github.io/hly/
 
+> 注意：如果CSS/JS资源未正确加载，请确认GitHub Pages设置中的baseurl为`/hly`
+
 ## 功能特性
 
 - 📚 100个章节完整内容
