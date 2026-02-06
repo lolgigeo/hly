@@ -15,20 +15,45 @@ layout: default
 
   <div class="chapters-grid" id="chapters-list">
     {% assign sorted_chapters = site.chapters | sort: 'chapter' %}
-    {% for chapter in sorted_chapters %}
-      {% assign chapter_num = chapter.chapter %}
-      <div class="chapter-card" data-chapter="{{ chapter_num }}" data-title="{{ chapter.title }}">
-        <a href="{{ chapter.url | relative_url }}" class="chapter-link">
-          <div class="chapter-number">第{{ chapter_num }}章</div>
-          <div class="chapter-title">{{ chapter.title }}</div>
-          {% if chapter.content contains '缺失' %}
-            <div class="chapter-status missing">缺失章节</div>
-          {% else %}
-            <div class="chapter-status">可读</div>
-          {% endif %}
-        </a>
-      </div>
-    {% endfor %}
+    {% if sorted_chapters.size > 0 %}
+      <!-- 使用Jekyll Collections -->
+      {% for chapter in sorted_chapters %}
+        {% assign chapter_num = chapter.chapter %}
+        <div class="chapter-card" data-chapter="{{ chapter_num }}" data-title="{{ chapter.title }}">
+          <a href="{{ chapter.url | relative_url }}" class="chapter-link">
+            <div class="chapter-number">第{{ chapter_num }}章</div>
+            <div class="chapter-title">{{ chapter.title }}</div>
+            {% if chapter.content contains '缺失' %}
+              <div class="chapter-status missing">缺失章节</div>
+            {% else %}
+              <div class="chapter-status">可读</div>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <!-- Fallback: 直接生成所有章节链接 -->
+      {% for i in (1..100) %}
+        {% assign chapter_num = i %}
+        {% assign chapter_num_str = chapter_num | prepend: '00' | slice: -2, 2 %}
+        {% assign chapter_url = '/chapters/' | append: chapter_num_str | append: '/' %}
+        {% assign is_missing = false %}
+        {% if chapter_num == 17 or chapter_num == 22 or chapter_num == 23 or chapter_num == 32 or chapter_num == 88 or chapter_num == 90 or chapter_num == 91 %}
+          {% assign is_missing = true %}
+        {% endif %}
+        <div class="chapter-card" data-chapter="{{ chapter_num }}" data-title="第{{ chapter_num }}章">
+          <a href="{{ chapter_url | relative_url }}" class="chapter-link">
+            <div class="chapter-number">第{{ chapter_num }}章</div>
+            <div class="chapter-title">第{{ chapter_num }}章</div>
+            {% if is_missing %}
+              <div class="chapter-status missing">缺失章节</div>
+            {% else %}
+              <div class="chapter-status">可读</div>
+            {% endif %}
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 
   <div class="stats">
