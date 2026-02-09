@@ -24,11 +24,19 @@
             <div class="chapter-meta">
               <span class="chapter-number">第{{ page.chapter }}章</span>
               {% if page.prev_chapter %}
-                {% assign prev_num = page.prev_chapter | prepend: '0' | slice: -2, 2 %}
+                {% if page.prev_chapter < 10 %}
+                  {% assign prev_num = page.prev_chapter | prepend: '0' %}
+                {% else %}
+                  {% assign prev_num = page.prev_chapter | append: '' %}
+                {% endif %}
                 <a href="{{ '/chapters/' | append: prev_num | append: '/' | relative_url }}" class="nav-link prev-link">← 上一章</a>
               {% endif %}
               {% if page.next_chapter %}
-                {% assign next_num = page.next_chapter | prepend: '0' | slice: -2, 2 %}
+                {% if page.next_chapter < 10 %}
+                  {% assign next_num = page.next_chapter | prepend: '0' %}
+                {% else %}
+                  {% assign next_num = page.next_chapter | append: '' %}
+                {% endif %}
                 <a href="{{ '/chapters/' | append: next_num | append: '/' | relative_url }}" class="nav-link next-link">下一章 →</a>
               {% endif %}
             </div>
@@ -41,7 +49,11 @@
           <nav class="chapter-navigation">
             <div class="nav-buttons">
               {% if page.prev_chapter %}
-                {% assign prev_num = page.prev_chapter | prepend: '0' | slice: -2, 2 %}
+                {% if page.prev_chapter < 10 %}
+                  {% assign prev_num = page.prev_chapter | prepend: '0' %}
+                {% else %}
+                  {% assign prev_num = page.prev_chapter | append: '' %}
+                {% endif %}
                 <a href="{{ '/chapters/' | append: prev_num | append: '/' | relative_url }}" class="btn btn-prev">← 上一章</a>
               {% else %}
                 <span class="btn btn-disabled">← 上一章</span>
@@ -50,7 +62,11 @@
               <a href="{{ '/' | relative_url }}" class="btn btn-index">目录</a>
               
               {% if page.next_chapter %}
-                {% assign next_num = page.next_chapter | prepend: '0' | slice: -2, 2 %}
+                {% if page.next_chapter < 10 %}
+                  {% assign next_num = page.next_chapter | prepend: '0' %}
+                {% else %}
+                  {% assign next_num = page.next_chapter | append: '' %}
+                {% endif %}
                 <a href="{{ '/chapters/' | append: next_num | append: '/' | relative_url }}" class="btn btn-next">下一章 →</a>
               {% else %}
                 <span class="btn btn-disabled">下一章 →</span>
