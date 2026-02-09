@@ -20,8 +20,24 @@
 
 ### 前置要求
 
-- Ruby 2.5.0或更高版本
+- **Ruby 3.0.0 或更高版本**（推荐 3.1+，与 GitHub Pages 一致）
 - Bundler gem
+
+> **注意**：GitHub Pages 使用 Ruby 3.1，本地 Ruby 版本不影响 GitHub Pages 构建。但如果要在本地开发，建议升级 Ruby 到 3.0+。
+
+### Ruby 版本管理
+
+如果使用 rbenv 或 rvm：
+
+```bash
+# 使用 rbenv
+rbenv install 3.1.0
+rbenv local 3.1.0
+
+# 或使用 rvm
+rvm install 3.1.0
+rvm use 3.1.0
+```
 
 ### 安装步骤
 
@@ -36,6 +52,15 @@ bundle exec jekyll serve
 ```
 
 3. 在浏览器中访问：http://localhost:4000
+
+### 常见问题
+
+**问题**：`bundle install` 提示 `ffi` 需要 Ruby 3.0+
+
+**解决方案**：
+- 升级 Ruby 到 3.0+（推荐）
+- 或使用 Docker：`docker run -it -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:latest jekyll serve`
+- 或仅在 GitHub Pages 上构建，本地不运行（GitHub Pages 构建不受影响）
 
 ## 项目结构
 
