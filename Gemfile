@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "minima", "~> 2.5"
-gem "jekyll-feed", "~> 0.12"
-gem "jekyll-sitemap", "~> 1.4"
+# GitHub Pages 使用 github-pages gem
+# 它包含了 Jekyll、minima 主题以及 jekyll-feed、jekyll-sitemap 等插件
+gem "github-pages"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
