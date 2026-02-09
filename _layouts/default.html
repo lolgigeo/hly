@@ -24,7 +24,8 @@
             <div class="chapter-meta">
               <span class="chapter-number">第{{ page.chapter }}章</span>
               {% if page.prev_chapter %}
-                {% if page.prev_chapter < 10 %}
+                {% assign prev_num_int = page.prev_chapter | plus: 0 %}
+                {% if prev_num_int < 10 %}
                   {% assign prev_num = page.prev_chapter | prepend: '0' %}
                 {% else %}
                   {% assign prev_num = page.prev_chapter | append: '' %}
@@ -32,7 +33,8 @@
                 <a href="{{ '/chapters/' | append: prev_num | append: '/' | relative_url }}" class="nav-link prev-link">← 上一章</a>
               {% endif %}
               {% if page.next_chapter %}
-                {% if page.next_chapter < 10 %}
+                {% assign next_num_int = page.next_chapter | plus: 0 %}
+                {% if next_num_int < 10 %}
                   {% assign next_num = page.next_chapter | prepend: '0' %}
                 {% else %}
                   {% assign next_num = page.next_chapter | append: '' %}
@@ -49,7 +51,8 @@
           <nav class="chapter-navigation">
             <div class="nav-buttons">
               {% if page.prev_chapter %}
-                {% if page.prev_chapter < 10 %}
+                {% assign prev_num_int = page.prev_chapter | plus: 0 %}
+                {% if prev_num_int < 10 %}
                   {% assign prev_num = page.prev_chapter | prepend: '0' %}
                 {% else %}
                   {% assign prev_num = page.prev_chapter | append: '' %}
@@ -62,7 +65,8 @@
               <a href="{{ '/' | relative_url }}" class="btn btn-index">目录</a>
               
               {% if page.next_chapter %}
-                {% if page.next_chapter < 10 %}
+                {% assign next_num_int = page.next_chapter | plus: 0 %}
+                {% if next_num_int < 10 %}
                   {% assign next_num = page.next_chapter | prepend: '0' %}
                 {% else %}
                   {% assign next_num = page.next_chapter | append: '' %}

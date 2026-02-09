@@ -35,7 +35,8 @@ layout: default
       <!-- Fallback: 使用_data/chapters.json数据 -->
       {% for chapter in site.data.chapters %}
         {% assign chapter_num = chapter.num %}
-        {% if chapter_num < 10 %}
+        {% assign chapter_num_int = chapter_num | plus: 0 %}
+        {% if chapter_num_int < 10 %}
           {% assign chapter_num_str = chapter_num | prepend: '0' %}
         {% else %}
           {% assign chapter_num_str = chapter_num | append: '' %}
